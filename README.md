@@ -12,4 +12,4 @@ Requires flask, kazoo.
 
     pip install flask, kazoo
     
-Uses the html5 mobile boilerplate.
+Uses the html5 mobile boilerplate. http://html5boilerplate.com/mobile/
