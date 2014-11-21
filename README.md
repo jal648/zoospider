@@ -6,7 +6,13 @@ Usage:
 
     python zoospider.py <zookeeper host:port pairs>
 
-Runs on localhost:3005.
+Example, if your have a zookeeper running on 10.141.141.10:2181:
+
+    python zoospider.py 10.141.141.10:2181
+
+Visit  http://localhost:3005/ to explore the znodes.
+
+
 
 Requires flask, kazoo.
 
