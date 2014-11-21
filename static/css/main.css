@@ -64,11 +64,16 @@ textarea {
 .header {
   background-color: #eee;
   padding: 1em;
+
 }
 
 .header a {
   text-decoration:none;
   color:inherit;
+}
+.header aside {
+  float: right;
+  color: #999;
 }
 
 .body {

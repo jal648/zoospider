@@ -32,6 +32,7 @@ def root(path=''):
             children = kw.zk.get_children(znodename)
 
             return render_template('index.html',
+                                   hosts=app.config['zookeeper_hosts'],
                                    path=znodename,
                                    content=data[0].__repr__(),  # avoids encoding issues.
                                    children=[dict(href=(znodename + '/' if znodename != '/' else znodename) + child,
