@@ -29,7 +29,7 @@
           <label>child znodes</label>
           <ul>
             {% for item in children %}
-              <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+              <li><a href="{{ item.href }}"><span class="inner">{{ item.label }}</span></a></li>
             {% endfor %}
           </ul>
         </div>
