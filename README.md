@@ -4,7 +4,7 @@ A simple python server for viewing zookeeper data.
 
 Usage:
 
-python zoospider.py <zookeeper host:port pairs>
+    python zoospider.py <zookeeper host:port pairs>
 
 Runs on localhost:3005.
 
