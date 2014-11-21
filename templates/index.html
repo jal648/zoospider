@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="shortcut icon" href="/static/img/touch/apple-touch-icon.png">
+
+
+
+        <link rel="stylesheet" href="/static/css/normalize.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <script src="/static/js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <section class="header"><a href="/">zoospider</a></section>
+        <!-- Add your site or application content here -->
+        <section class="body">
+
+        <h1><label>znode name</label><span>{{ path }}</span></h1>
+        <h2><label>data</label><span>{{ content }}</span></h2>
+        <div class="children">
+
+          <label>child znodes</label>
+          <ul>
+            {% for item in children %}
+              <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        </section>
+
+
+
+    </body>
+</html>
